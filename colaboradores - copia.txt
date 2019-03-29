@@ -1,0 +1,448 @@
+? Carranza, M., E. Buforn, A. Zollo (2015). Testing the Earthquake Early-Warning
+Parameter Correlations in the Southern Iberian Peninsula. Pure Appl. Geophys., 172,
+Issue 9, 2435-2448, doi: 10.1007/s00024-015-1061-6
+? Picozzi, M., S. Colombelli, A. Zollo, M. Carranza, E. Buforn (2015). A threshold
+based earthquake early warning system for offshore events in Southern Iberia. Pure
+Appl. Geophys., 172, Issue 9, 2467-2480, doi: 10.1007/s00024-014-1009-2
+? Carranza, M., E. Buforn, S. Colombelli, A. Zollo (2013). Earthquake early warning for
+southern Iberia: A P wave threshold-based approach. Geophys. Res. Lett. 40, 4588–
+4593, doi: 10.1002/grl.50903.
+Otras Publicaciones:
+? E. Buforn, A. Pazos, A. Roca, M. Carranza, J. M. Dávila, A. Udías, A. Zollo, M.
+López and the ALERTES team (2016). ALERTES: An Earthquake Early Warning
+System for the Ibero-Maghrebian region. ECGS & ESC/EAEE Joint Workshop
+Proceedings Book, 31-40
+? Carranza M., E. Buforn, C. Pro, A. Zollo, A. Pazos, L. Lozano, F. Carrilho (2013).
+Estimation of Pd and tc Parameters for S. Vicente Cape and Gulf of Cadiz Earthquakes.
+7AHPGG Proceedings Book, S02, 171-174
+Anexo IX: Contribuciones Científicas
+247
+Contribuciones a Congresos:
+? Carranza, M., E. Buforn, and A. Zollo (2016). Relación entre el Pico Inicial del
+Desplazamiento y la Ruptura del Terremoto. 9ª Asamblea Hispano Portuguesa de
+Geodesia y Geofísica, Madrid (España). 28-30 Junio 2016
+? Carranza, M., E. Buforn, S. Colombelli and A. Zollo (2016). Study of the Initial Peak
+Displacement Evolution of Ibero-Maghrebian Earthquakes: Application for Earthquake
+Early Warning. European Geosciences Union. Viena (Austria). 23-28 Abril 2016
+? Buforn, E., C. Pro, J. Borges, C. Sousa Oliveira, M. Carranza, A. Udías, J.M.
+Martínez-Solares, A. Gómis & Maurizio Mattesini (2015). Synthetic PGV and PGA
+values for the 1969 St. Vincent Cape earthquake Ms=8.1. American Geophysical Union.
+San Francisco (EEUU). 14-18 Diciembre 2015
+? Carranza, M., E. Buforn, S. Colombelli, Y.M. Wu and A. Zollo (2015). Towards the
+Confirmation of the Differences on the Rupture Initiation of Earthquakes from the First
+Seconds of P-wave, ECGS & ESC/EAEE Joint Workshop. Luxemburgo (Luxemburgo).
+18-20 Noviembre 2015
+? Carranza, M., E. Buforn and A. Zollo (2015) Origin of anomalous Earthquake Early
+Warning Parameter Values for Earthquakes in the Ibero-Maghrebian Region. European
+Geosciences Union. Viena (Austria). 12-17 Abril 2015
+? Carranza, M., E. Buforn, A. Pazos, A. Zollo, S. Colombelli, C. Pro, L. Lozano and F.
+Carrilho (2014) EEWS Parameters in Southern Iberia. Workshop on Earthquake Early
+Warning Systems: Applications to the Ibero-Maghrebian Region, Madrid (España). 4-5
+Febrero 2014
+? Carranza, M., E. Buforn, A. Pazos, A. Zollo, S. Colombelli, C. Pro, L. Lozano and F.
+Carrilho (2014). A P-wave Threshold-Based Earthquake Early Warning System for
+Southern Iberia. 8ª Asamblea Hispano Portuguesa de Geodesia y Geofísica, Evora
+(Portugal). 29-31 Enero 2014
+? Carranza, M; Buforn, E.; Pro, C.; Zollo, A.; Pazos, A.; Lozano, L.; Carrilho, F. (2013).
+Test of the GMPE obtained for South Iberia. IAHS-IAPSO-IASPEI Joint Assembly.
+Gotemburgo (Suecia). 22-26 Julio 2013 
+EEWS para el sur de la Península Ibérica: Parámetros de la Alerta
+248
+? Carranza, M; Buforn, E.; Pro, C.; Zollo, A.; Pazos, A.; Lozano, L.; Carrilho, F. (2013).
+Preliminary Results of EEWS Parameters for SW Iberia. European Geosciences Union.
+Viena (Austria). 7-12 Abril 2013
+Estancias en Centros Extranjeros:
+? RISSC-Lab Universitá degli Studi di Napoli Federico II, Nápoles (Italia), 4 meses entre
+dos etapas en el año 2013 y 2015. Financiación 2013: Beca Nera Project (AMRAAnalysis and Monitoring of Environmental Risk). Financiación 2015: Erasmus Training
+Project (Universidad Complutense de Madrid).
+? Department of Geoscience of the National Taiwan University (NTU), Taipei (Taiwán),
+2 meses en el año 2014. Financiación: Summer Institute Programme of the Ministry of
+Science and Technology of Taiwan
+
+
+
+Programas desarrollados
+Chcoord. Este programa se ha escrito en lenguaje fortran y permite introducir la latitud y
+longitud de una estación en la cabecera de los archivos SAC, a partir de un fichero con la
+información correspondiente. Necesita como entrada:
+Anexo III: Programas utilizados
+207
+1- un fichero que contenga el listado de archivos SAC a modificar en filas
+consecutivas separadas por el valor 1, terminando la última fila con un valor 0
+2- un fichero de texto con 3 columnas: nombre de la estación, latitud y longitud.
+c ***************************************************************
+c
+c
+c
+c Programa que cambia las coordenadas de la estación en la
+c cabecera SAC según un archivo con el listado de estaciones
+c
+c Necesita un archivo que contenga el listado de archivos SAC a
+c cambiar en fila separadas por el valor 1 y terminar la última
+c fila con un valor 0. Los archivos deben contener en el header el
+c valor kstnm con el nombre de la estación.
+c
+c File1
+c 1
+c File2
+c 1
+c .
+c .
+c .
+c LastFile
+c 0
+c
+c Necesita otro archivo con el formato de 3 columnas: estación
+c latitud longitud
+c
+c
+c M. Carranza, septiembre 2015
+c
+c ***************************************************************
+ integer MAX
+ parameter (MAX=20000)
+ real yarray
+ dimension yarray(max)
+ real beg, del
+ real latitude, longitude
+ integer npts, nerr, control
+ character*80 name, namecoord
+ character*80 fil, ff3
+ character*80 ff4, na
+ write(*,102)
+ 102 format(' nombre fichero con la lista de ficheros a cambiar')
+ read(*,'(a)') ff3
+ open(1,file=ff3)
+ write(*,103)
+103 format(' nombre fichero con la lista de coordenadas')
+ read(*,'(a)') ff4
+ 15 read(1,'(a)') fil
+ write(*,*) 'archivo=',fil
+ na=fil
+ call RSAC1(na,YARRAY,NPTS,BEG,DEL,MAX,NERR)
+ if(nerr.NE.0) then
+EEWS para el sur de la Península Ibérica: Parámetros de la Alerta
+208
+ write(*,*)'Error reading SAC File: ', kname,nerr
+ call exit(-1)
+ endif
+ call GETKHV('KSTNM',name,nerr)
+ open(2,file=ff4)
+ control=0
+ DO WHILE (control==0)
+ read(2,*) namecoord,latitude,longitude
+ IF (namecoord.eq.name) THEN
+ write(*,*) 'found',name
+ write(*,*) latitude,longitude
+ call SETFHV('STLA',latitude,nerr)
+ call SETFHV('STLO',longitude,nerr)
+ call WSAC0(fil,xdummy,YARRAY,NERR)
+ if(nerr.NE.0) then
+ write(*,*)'Error writting SAC File: ', kname,nerr
+ call exit(-1)
+ endif
+ control=1
+ END IF
+ END DO
+ close(2)
+ write(*,9347)
+9347 format(' para continuar escriba 1, 0 para acabar')
+ read(1,*) mf
+ if(mf.eq.1)go to 15
+ close(1)
+ stop
+ end
+LeeACEv1: este programa está escrito en lenguaje MATLAB y se utiliza como paso previo
+para transformar el formato v1 a SAC. En concreto lee las componentes de aceleración de los
+ficheros con formato v1 (10 columnas) y las escribe en dos columnas (tiempo, aceleración) con
+un formato de número en punto flotante estándar 12.8f.
+function [final]=leeACEv1(ficherov1,muestreo)
+%Programa para leer las componentes de aceleracion separadas de los ficheros
+con
+%formato v1
+%Despues se pude aplicar a la salida el programa SM2SAC_mat para convertir
+%a formato SAC
+%Creado por M. Carranza 09/2015
+A=load(ficherov1);
+[m,n]=size(A);
+fi=fopen('C:\Users\METEO\Downloads\salida.txt','w');
+ndatos=m*n;
+t=ones(ndatos,1);
+s=ones(ndatos,1);
+cn=1;
+l=0;
+for i=1:m
+ for j=1:n
+ t(cn)=l;
+Anexo III: Programas utilizados
+209
+ s(cn)=A(i,j);
+ cn=cn+1;
+ l=l+muestreo;
+ end
+end
+plot(t,s);
+final=[t,s];
+fprintf(fi,'%12.8f\n', final(:,2));
+fclose(fi);
+Ptw. este programa escrito en lenguaje MATLAB permite calcular los parámetros Pv y Pd en
+ventanas de tiempo que aumentan progresivamente 0.02 segundos para registros de aceleración.
+Existe una versión con una integración menos que lo realiza sobre registros de velocidad
+(ptw_vel). Necesita como entrada una lista con la información del terremoto y las estaciones
+(figura III.1), la frecuencia de corte del filtro paso alto, su número de polos y la longitud
+máxima de ventana de tiempo para la que se desea calcular los parámetros. Se puede modificar
+el número de estaciones a conveniencia.
+Como salida proporciona tantos ficheros de texto como número de ventanas procesadas. Están
+formados por 5 columnas correspondientes a la distancia, magnitud, Pa, Pv y Pd. En el caso de
+ptw_vel las columnas de salida son 4: distancia, magnitud, Pv y Pd. El programa ptw_vel
+necesita como entrada un archivo con la sensibilidad del instrumento (Anexo V), para convertir
+las cuentas a unidades del sistema cegesimal, mientras que para ptw no es necesario.
+#Ejemplo para el caso de registros de aceleración y 10 estaciones
+% Routine to compute Pa Pv and Pd in enlarged time windows increased each
+% 0.02 seconds
+% It works on the vertical component of acelerometric data
+%
+%inputs
+% lista: lists with information allowing to automaticaly build the trace
+name
+% fmin : cut off frequency of hp filter, the low pass is fixed to 10
+% secMAX : max time window used for computation
+% npolse : butter filter poles number
+%WRITTEN by M. CARRANZA 2013
+function [tau]=ptw(lista,fmin,secMAX,npoles,path)
+%l=textread(varagin,'%s');
+pathfiles=path;
+for s=0.02:0.02:secMAX
+ Ptw=s
+ [month day jdy yy hh path, net, pfix, sta1, sta2, sta3, sta4, sta5,
+sta6, sta7, sta8, sta9, sta10]=textread(lista,'%s %s %s %s %s %s %s %s %s %s
+%s %s %s %s %s %s %s %s);
+ [aa bb]=size(path);
+ t=num2str(Ptw);
+ nomefile=strcat(pathfiles,'\','onsite',t,'sec.txt')
+ fid=fopen(nomefile,'w');
+ j=0;
+EEWS para el sur de la Península Ibérica: Parámetros de la Alerta
+210
+ for i=1:aa
+ %figure
+ kk=0;
+ if ~strcmp(sta1(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta1(i);
+ end
+ if ~strcmp(sta2(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta2(i);
+ end
+ if ~strcmp(sta3(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta3(i);
+ end
+ if ~strcmp(sta4(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta4(i);
+ end
+ if ~strcmp(sta5(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta5(i);
+ end
+ if ~strcmp(sta6(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta6(i);
+ end
+ if ~strcmp(sta7(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta7(i);
+ end
+ if ~strcmp(sta8(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta8(i);
+ end
+ if ~strcmp(sta9(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta9(i);
+ end
+ if ~strcmp(sta10(i), 'none')
+ kk=kk+1;
+ stat(kk)=sta10(i);
+ end
+
+
+ [bb skk]=size(stat);
+ count=0;
+
+ for k=1:skk
+ % SAC input file nanme aceleración;
+
+tzeta=strcat(path(i),'\',net(i),'.',stat(k),'.HHZ.',pfix(i),'.SAC');
+
+ % reading sac file
+ zeta=rsac(str2mat(tzeta));
+ [h,a]=size(zeta);
+ %filter design
+ ny=1/(2*zeta(1,3));
+ [a,b]=butter(npoles,fmin/ny,'high');
+ pamax=max(zeta(:,2))
+Anexo III: Programas utilizados
+211
+ % integral computation
+ disep=zeta(51,3);
+ prof=zeta(39,3);
+ dist=sqrt(zeta(51,3)^2+zeta(39,3)^2);
+ intps=0.079*dist
+ if(intps > Ptw)
+ j=j+1;
+count=count+1
+zeta(9,3);
+zeta(1,1);
+zeta(1,3);
+o=zeta(9,3)-zeta(1,1)+0.01;
+oo=(zeta(9,3)-zeta(1,1)+0.01)/zeta(1,3);
+p=zeta(9,3)-zeta(1,1)+Ptw+0.01;
+pp=(zeta(9,3)-zeta(1,1)+Ptw+0.01)/zeta(1,3);
+ pstart=floor((zeta(9,3)-zeta(1,1)+0.01)/zeta(1,3));
+pend=ceil((zeta(9,3)-zeta(1,1)+Ptw+0.01)/zeta(1,3));
+dif=pstart-pend;
+mag=zeta(40,3);
+magnitude(count)=mag;
+dista(count)=disep;
+stationsnames(count)=stat(k);
+ace(:,1)=detrend(zeta(pstart:pend,2),'constant');
+ace(:,1)=detrend(ace(:,1),'linear');
+vel(:,1)=cumtrapz(ace(:,1)).*zeta(1,3);
+disp(:,1)=cumtrapz(vel(:,1)).*zeta(1,3);
+disp(:,1)=filter(a,b,disp(:,1));
+pa(count)=max(ace(:,1))
+pv(count)=max(vel(:,1));
+ pd(count)=max(disp(:,1));
+
+ end % ventana sec
+ end % estacion
+ end % ciclo listar estaciones
+ [aa bb]=size(pa)
+ for g=1:bb
+ fprintf(fid,'%f %f %f %f
+%f\n',dista(g),magnitude(g),pa(g),pv(g),pd(g));
+ end
+ fclose(fid);
+ clear stat ace vel disp magnitude dista pa pv pd stationsnames
+end %ciclo ventana
+PtwPD. este programa escrito en lenguaje MATLAB procesa los archivos de salida del
+programa ptw (y ptw_vel). A partir de ellos obtiene un valor medio de Pd reducido a una
+distancia estándar para cada ventana de tiempo. Necesita también como entrada un archivo que
+lleve por nombre SNR.txt, que contenga el nombre y coordenadas de las estaciones que
+satisfacen el criterio de calidad. Establece como requisito un número mínimo de estaciones para
+realizar los cálculos, el cual es modificable. Como fichero salida proporciona un archivo de
+texto de tres columnas: ventana de tiempo, Pd promedio y número de estaciones utilizadas para
+obtener el promedio. Realiza también un gráfico de Pd frente a la longitud de ventana PTW.
+Existen otro programa análogo que realiza los cálculos para Pv (ptwPV).
+EEWS para el sur de la Península Ibérica: Parámetros de la Alerta
+212
+#Ejemplo para el cómputo de Pd
+% This matlab program read the files generated in a event for the
+different
+% time windows
+% All files of the event must be on the same folder for the path
+% Then estimates the time window and the Mean Peak Velocity after
+reducting it to a standr distance of 10 km.
+% Finally write it in the output file in the format timewidow peak and
+plot
+% them
+% The equation for the reduction of Pd to 10 km is:
+% Pdred=Pd*10^(1.373*log10(R/10))
+% Taken form Wu&Zhao 2006
+% inputs
+% path: path of the folder conteing the files to be read
+% step: interval of seconds between each timewindow processed
+% endsec: final time windows seconds
+%WRITTEN by M. CARRANZA 2013
+function []=ptwsincriteriaPD(path,step,endsec)
+pathfiles=path
+s=step;
+%lazo de lectura de todas las ventanas contenidas en el directorio
+z=1;
+u=1;
+for i=s:s:endsec
+%for i=12:0.1:12.6
+ l=i;
+ t=num2str(l);%ventana de tiempo correspondiente
+ name=strcat(pathfiles,'\','onsite',t,'sec.txt');%creación del texto
+para leer el archivo
+ nameruido=strcat(pathfiles,'\','SNR.txt');%creación del texto para
+leer el archivo snr
+ %lectura de las columnas en su respectivo formato %s string %n número
+ [dist,mag,Pa,Pv,Pd]=textread(name,'%n %n %n %n %n');
+ c=1;
+ %lectura fichero ruido
+ [SINAME SILO SILA]=textread(nameruido,'%s %n %n');
+ [b,a]=size(Pd);
+ a;
+ r=1;
+ Pdred(1)=0;
+ for j=1:1:a
+ sp=station(j);
+ for s=1:length(SILA)
+ sr=SINAME(s);
+ sino=strcmp(sr,sp);%comprobacion si la estacion cumple el
+criterio señal ruido
+ if sino==1
+%ecuación de reduccion a 10 km especifica región Ibero Mogrebi,
+modificable
+ Pdred(r)=Pd(j)*10^(1.7*log10(dist(j)/10));
+ r=r+1;
+ end
+ end
+Anexo III: Programas utilizados
+213
+
+ end
+ %fin del lazo para crear el Pv reducido
+ suma=Pdred(1);
+ %plot(dist,Pvred,'.')
+ %obtención de la media
+ for j=2:1:(r-1)
+ suma=suma+Pdred(j);
+ end %fin obtencion de la media
+
+ numdata(z)=r-1;
+ if r~=1
+ if z==1
+ PTW(z)=l;
+ Pdrmean(z)=suma./(r-1);
+ logar(z)=log10(Pdrmean(z));
+ else
+ alt=suma./(r-1);
+ bolt=Pdrmean(z-1);
+ if alt>bolt
+ PTW(z)=l;
+ Pdrmean(z)=alt;
+ logar(z)=log10(Pdrmean(z));
+ else
+ PTW(z)=l;
+ Pdrmean(z)=bolt;
+ logar(z)=log10(Pdrmean(z));
+ end
+ end
+ end
+ %fclose('all');
+ z=z+1;
+ clear a b Pd Pv Pa mag dist suma Pdred
+end
+%pinta la grafica
+%'bgrcmyk' 'rmy
+plot(PTW,logar')
+%outname=strcat(pathfiles,'/salida.txt')
+%escritura del resultado en .txt
+fid=fopen(strcat(pathfiles,'/salidaPD.txt'),'w')
+for i=1:length(PTW)
+ fprintf(fid,'%f %f %f\n',PTW(i),logar(i),numdata(i));
+end
+fclose('all');
+Separar. Se trata de un programa escrito en shell que extrae las diferentes columna del formato
+acc de los registros de aceleración sin cabecera, y las guarda en ficheros de texto para cada una
+de las componentes, de la forma STA.CM.txt, dónde STA es el código de la estación (tablas I.3
+del Anexo I) y CM índica la componente (NS, EW, V).
+#ejemplo del macro separar
+#los archivos *SIN* son el formato acc sin cabecera
+awk „{print $2}? LOJSIN.txt>LOJ.NS.tx
