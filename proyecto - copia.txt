@@ -1,0 +1,22 @@
+ Spain,tengo cuenta en HitHub,no entro mucho,de momento,estoy aprendiendo temas,también estoy en SourceForge probando primeros pasos,a ver si me aclaro y sincronizo entre los 2…más bien programación,poco,soy maestro de Electricidad y Electronica y trabajé más de 25 años en Telefónica de España(Movistar),y en el mundo de la Música,soy batería…siempre entre cables,en fin…  MI INTENTO DE PROYECTO ES PROPORCIONAR UN AVISO POR ALERTA DE CATASTROFE,tipo Japón… 1 0 segundos para terremoto…… y funciona,el problema viene donde no está implementado ese sistema,ya sabe,países ricos y pobres…2ªproblema: Las señales no están sincronizadas:   Radio---TeleVisión---TDT----Internet---Telefono Móvil----   le doy un premio Nobel a quien lo consiga sincronizar en este año…..
+   Es casi broma,jijjeji,,,, Solución:Todos manejamos Internet,o hay alguien cercano,si fuese posible ponerse de acuerdo,sin asustarse por esto,para proporcionar un  AVISO EMERGENTE EN LOS NAVEGADORES (todos ,por favor),no pensemos mál ,por que se inicie sola la aplicación,si no que es de agradecer,asi da tiempo de ponerse a salvo,y si no te afecta,y estas próximo,vas avanzando en el tema de enviar ayuda humanitaria(cada hora es crucial para muchas vidas),y aunque estés en las antípodas,con estos aviones,llegas también.
+  Le comento,que intentaré aprender,páginas Wiki,y si me lo permiten subir links,presentaciones,publicaciones,etc,etc…si puede mire a ver o le cedo completamente la idea,ya tiene contactos y experiencia,yo estoy a otro nivel:
+ Maestro de electricidad y electrónica,Redes:25 años de experiencia en Movistar(Telefónica de España)trabajando en 4 provincias,25 años de experiencia con ordenadores,experiencia en el mundo de la música (analógico y digital),Idiomas:   estudiados:Español,Francés,Inglés conceptos:Portugués,Catalán,Italiano.
+ Envio constante de "sugerencias"a Microsoft y Google (y a sus desarrolladores).
+
+GitHub: Internetimple / Catastrophic-Warning
+https://sourceforge.net/p/internetsimple/admin/files/badges  
+
+BUENO DIRECTO: tengo QUE CALIFICAR A SmartSystemMenu extends system menu of all windows in the system COMO MARAVILLOSO,falta algo de traducción,etoy haciendo pruebas y ensayos al respecto(el objetivo es traducir toda la página web,con imágenes incluidas)….sigo:si se fija en TurboTop,  PUEDE REALIZAR aLWAYS ON tOP EN LAS APLICACIONES METRO WINDOWS,NO SE SI PUEDE ´s AÑADIR ESTA CARACTERISTICA a tu maravilla el sitio parece independiente(pone no seguro) savardsoftware,ya sabe,hablando se arreglan las cosas.  VOY A PEDIR AYUDA A  https://github.com/Klocman/   
+https://sourceforge.net/u/klocman/profile/  
+ le he mandado un montón de correos,largos y pesados,con varios e-mails(mal hecho),todos empezaban por   Spain:
+t terminan  Bye…..
+  Considere la buena obra,la de avanzar en trducciones,intentar que sean menores las catástrofes,y siempre en lo alto lo bueno,  gracias  Bye……
+https://github.com/internetsimple
+https://github.com/internetsimple/Catastrophic-Warning/new/master?readme=1
+https://github.com/internetsimple/Catastrophic-Warning/blob/master/.gitignore
+https://github.com/internetsimple/Catastrophic-Warning/upload/master
+
+https://sourceforge.net/p/internetsimple/admin/files/badges
+https://sourceforge.net/projects/internetsimple/upload/
+
